@@ -1,0 +1,194 @@
+.card {
+    width: 100%;
+    border: 1px solid #C4C4C4;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 22px 30px;
+    margin-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+-webkit-box-pack: justify;
+-ms-flex-pack: justify;
+        justify-content: space-between;
+}
+
+.card:last-child {
+    margin-bottom: 0;
+}
+
+.card__box {
+    -webkit-box-orient: vertical;    -webkit-box-direction: normal;    -ms-flex-direction: column;    flex-direction: column;}
+
+.card_hidden {
+    display: none;
+}
+
+.card__title {
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 0.01em;
+    color: #F5E6D1;
+    font-size: 25px;
+    margin-top: 14px;
+    margin-bottom: 19px;
+    line-height: 140%;
+    font-family: "Graphik LCG", Arial, sans-serif;
+
+}
+
+.card__type {
+    font-family: "Graphik LCG", Arial, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 0.01em;
+    color: #B0B0B0;
+}
+
+.card__priceContainer {
+    background: linear-gradient(0deg, #F5E6D1, #F5E6D1), #FFFFFF;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.card__descr {
+    font-family: "Graphik LCG", Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    margin: 0;
+    display: block;
+    max-width: 700px;
+
+}
+
+
+.card__button {
+    background: transparent;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    width: 255px;
+    height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 38px;
+
+}
+
+.card__button:hover, .card__button:active, .card__button:focus {
+  
+    color: #000000;
+    text-decoration: none;
+    background: -webkit-gradient(linear, left bottom, left top, from(#F5E6D1), to(#F5E6D1)), #FFFFFF;
+    background: -o-linear-gradient(bottom, #F5E6D1, #F5E6D1), #FFFFFF;
+    background: linear-gradient(0deg, #F5E6D1, #F5E6D1), #FFFFFF;
+}
+
+.card__button_hidden {
+    display: none;
+}
+
+@media screen and (max-width: 992px) {
+
+    .card {
+        margin-right: 0px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+            flex-direction: column;
+    }
+
+
+    .card__button {
+        background: transparent;
+        font-weight: normal;
+        line-height: 150%;
+        letter-spacing: 0.03em;
+        color: #ffffff;
+        border: none;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        outline: none;
+        cursor: pointer;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        height: auto;
+        margin-top: 30px;
+        text-decoration: underline;
+    }
+
+    .card__button:hover, .card__button:active, .card__button:focus {
+        color: white;
+        text-decoration: none;
+        background: transparent;
+    }
+    
+
+}
+
+
+
+@media screen and (max-width: 678px) {
+    .card {
+        width: 100%;
+        -webkit-box-orient: vertical;        -webkit-box-direction: normal;        -ms-flex-direction: column;        flex-direction: column;    }
+
+    .card__descr {
+        font-family: "Graphik LCG", Arial, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 150%;
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
+        margin: 0;
+
+    }
+
+}
+
+
+@media screen and (max-width: 340px) {
+
+    .card__descr {
+        font-family: "Graphik LCG", Arial, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 150%;
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
+        margin: 0;
+    }
+    .card__button {
+        margin-top: 52px;
+
+    }
+}
