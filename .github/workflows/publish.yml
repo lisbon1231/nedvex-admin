@@ -20,7 +20,23 @@ jobs:
         run: npm -v
       - name: Install Dependencies
         run: npm install
-      - name: 🚀 publish
+      - name: Build this shit
         run: npm run build
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          exclude: .git*
+            - .git*/**
+            -  **/.git*/**
+            - node_modules/**
+            - content/**/*
+            - static/**/*
+            - templates/**/*
+            - .github/**/*
+            - old_manualy_created_pages/**/*
+            
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
