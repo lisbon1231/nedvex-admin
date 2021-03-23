@@ -14,8 +14,10 @@ jobs:
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org
+      - name: Install Dependencies
+        run: npm install
       - name: 🚀 publish
-        run: npm build
+        run: npm run build
         working-directory: my-package
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
