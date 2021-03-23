@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Nedvex Group - оператор недвижимости в Сочи">
+        <!-- Google Tag Manager -->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != 'dataLayer'
+                        ? '&l=' + l
+                        : '';
+                j.async = true;
+                j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f
+                    .parentNode
+                    .insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-T6WJRD4');
+        </script>
+        <!-- End Google Tag Manager -->
+        <meta name="keywords" content="Nedvex Nedvex Consulting Недвекс">
+        <meta property="og:image" content="img/logo.png">
+        <meta name="format-detection" content="telephone=no">
+        <title>Все вакансии — Nedvex</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    </head>
+
+    <body class="page">
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T6WJRD4" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <div class="page__content">
+            {{% import './blocks/header.njk' %}}
+            {{% import './blocks/intro.njk' %}}
+
+            <section class="main" id="main">
+                <form class="form-menu form-menu_large">
+                    <div class="form-menu__inputs">
+                        <label class="form-menu__label form-menu__label_hov form-menu__label_checked">
+                            Все вакансии
+                            <input checked class="form-menu__input" name="type" type="radio" value="all">
+                        </label>
+                        <label class="form-menu__label form-menu__label_hov">
+                            Продажи
+                            <input class="form-menu__label_hov form-menu__input" name="type" type="radio" value="Продажи">
+                        </label>
+                        <label class="form-menu__label form-menu__label_hov">
+                            Финансы
+                            <input class="form-menu__label_hov form-menu__input" name="type" type="radio" value="Финансы">
+                        </label>
+                        <label class="form-menu__label form-menu__label_hov">
+                            Маркетинг
+                            <input class="form-menu__input" name="type" type="radio" value="Маркетинг">
+                        </label>
+                        <label class="form-menu__label form-menu__label_hov">
+                            <input class="form-menu__input" name="type" type="radio" value="Девелопмент">
+                            Девелопмент
+                        </label>
+                        <label class="form-menu__label form-menu__label_hov">
+                            <input class="form-menu__input" name="type" type="radio" value="Управление персоналом">
+                            Управление персоналом
+                        </label>
+                        <label class="form-menu__label form-menu__label_hov">
+                            <input class="form-menu__input" name="type" type="radio" value="Снабжение">
+                            Снабжение
+                        </label>
+                    </div>
+                </form>
+                <ul class="cards"></ul>
+                <button class="main__button">Загрузить еще</button>
+            </section>
+
+            
+            {{% import './blocks/presentation.njk' %}}
+            {{% import './blocks/footer.njk' %}}
+        </div>
+        <div class="thanks-block">
+            <div class="popup__container">
+                <button class="popup__closedbutt popup__closedbutt_oth popup__clos-thanks"></button>
+                <div class="popup__cont">
+                    <h2 class="popup__title ">Спасибо за вашу заявку!</h2>
+                    <p class="popup__subtitle popup__subtitle-thanks">Мы свяжемся с вами в&nbsp;ближайшее время</p>
+                </div>
+                <a href="index.html">
+                    <button class="popup__butt popup__butt_thanks">Вернуться на главную</button>
+                </a>
+            </div>
+        </div>
+        <div class="popup popup_menu">
+            <div class="popup__container popup__container_menu">
+                <div class="popup__nav">
+                    <button class="popup__closedbutt-menu"></button>
+                    <img class="popup__logo" src="img/logodark.svg" alt="">
+                    <div class="popup__box-oth">
+                        <div class="popup__icon"></div>
+                        <a class="popup__phone" href="tel:+7 (968) 300-22-30">+7 (968) 300-22-30</a>
+                    </div>
+                </div>
+                <a href="https://nedvex.ru/" class="popup__link-menu popup__presa popup__link-menu_mone">Главная</a>
+                <a class="popup__link-menu popup__link-menu_vesna" href="https://nedvex.ru/objects">Объекты</a>
+                <a class="popup__link-menu popup__link-menu-contact" href="#presentation">О нас</a>
+                <div class="popup__box-hidden">
+                    <div class="popup__icon"></div>
+                    <a class="popup__phone" href="tel:+7 (968) 300-22-30">+7 (968) 300-22-30</a>
+                </div>
+            </div>
+        </div>
+
+        <template class="card-template">
+            <div class="card">
+                <div class="card__box">
+                    <span class="card__type"></span>
+                    <h2 class="card__title"></h2>
+                    <p class="card__descr"></p>
+                </div>
+                <a class="card__button"></a>
+            </div>
+        </template>
+        <script>
+            // Найти все ссылки начинающиеся на #
+            const anchors = document.querySelectorAll('a[href^="#"]')
+
+            // Цикл по всем ссылкам
+            for (let anchor of anchors) {
+                anchor.addEventListener("click", function (e) {
+                    e.preventDefault() // Предотвратить стандартное поведение ссылок
+                    // Атрибут href у ссылки, если его нет то перейти к body (наверх не плавно)
+                    const goto = anchor.hasAttribute('href')
+                        ? anchor.getAttribute('href')
+                        : 'body'
+                    // Плавная прокрутка до элемента с id = href у ссылки
+                    document
+                        .querySelector(goto)
+                        .scrollIntoView({behavior: "smooth", block: "start"})
+                })
+            }
+        </script>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="js/jquery.maskedinput.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script>
+            function noDigits(event) {
+                if ("1234567890".indexOf(event.key) != -1) 
+                    event.preventDefault();
+                }
+        </script>
+
+        <script>
+            jQuery(document).ready(function ($) {
+                $("#form").submit(function (event) {
+                    event.preventDefault();
+                    var str = $(this).serialize();
+                    var test = checkForm();
+                    if (test) {
+                        $.ajax({
+                            type: "POST",
+                            url: "send.php",
+                            data: str,
+                            success: function (msg) {
+                                if (msg == 'OK') {
+                                    console.log("send")
+                                    $('.thanks-block').fadeIn();
+
+                                } else {
+                                    console.log(msg)
+                                }
+                            }
+                        });
+                    }
+                    return false;
+                });
+            });
+        </script>
+
+        <script src="js/menu.js"></script>
+        <script src="js/common.js"></script>
+        <script src="js/commonoth.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>

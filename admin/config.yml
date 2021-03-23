@@ -1,0 +1,22 @@
+backend:
+  name: github
+  repo: lisbon1231/nedvex-admin
+  branch: main
+media_folder: "static/uploads"
+public_folder: "/uploads"
+collections:
+  - label: "Вакансии"
+    name: "vacancies" 
+    folder: "content/vacancies"
+    create: true
+    fields:
+    - { label: "Коллекция", name: "vacancies", widget: "hidden", default: "vacancies"}
+    - { label: "Шаблон", name: "layout", widget: "hidden", default: "vacancy.njk"}
+    - { label: "Категория", name: "category", widget: "text" }
+    - { label: "Название вакансии", name: "title", widget: "text" }
+    - { label: "Описание вакансии", name: "description", widget: "markdown" }
+    - { label: "Город", name: "city", widget: "text" }
+    - { label: "Зарплата", name: "salary", widget: "text", default: "Не указана" }
+    - { label: "Требования", name: "requirements", widget: "list" }
+    - { label: "Условия", name: "conditions", widget: "list" }
+    - { label: "Обязаности", name: "responsibilities", widget: "list" }
