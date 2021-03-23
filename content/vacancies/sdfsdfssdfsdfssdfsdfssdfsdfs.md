@@ -1,15 +1,18 @@
 ---
-vacancies: vacancies
+tags: vacancies
 layout: vacancy.njk
-category: sdfsdfs
-title: sdfsdfssdfsdfssdfsdfssdfsdfs
-description: asdasdac s1231231
-city: готемсити
+category: 2Аналитический
+title: 2Аналитик
+description: 2sdfsdfcvbccvb
+city: 2Сочи
 salary: Не указана
 requirements:
-  - летать
+  - 2отличное владение MS Office, глубокие знания Excel
+  - 2знание вспомогательных программ и методов, которые ускоряют работу (CRM, Google Analytics и другие)
 conditions:
-  - хорошие
+  - 2зарплата выплачивается 2 раза в месяц, за историю компании ни разу не было задержек
+  - 2график работы 5/2 с 9:00- 18:00
 responsibilities:
-  - готовить
+  - 2сбор, обработка информации и подготовка аналитики с использованием возможностей MS Excel
+  - 2сбор, анализ информации по рынку продаж в регионах присутствия, оценка положения компании на рынке, формирование выводов, трендов и предложений по улучшению позиции компании
 ---

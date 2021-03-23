@@ -1,0 +1,51 @@
+<section class="form">
+    <h2 class="form__header">Заинтересовала вакансия?</h2>
+    <h3 class="form__subheader">Отправьте заявку прямо сейчас
+        </h3>
+    <form autocomplete="off" action="send.php" enctype="multipart/form-data" method="POST" id="data" class="form__body" novalidate>
+        <div class="form__item form__item_name">
+            <span class="form__error form__error_hidden">Введите, пожалуйста, ваше имя</span>
+            <input id="formName" placeholder="Имя" type="text" name="name" class="form__input  form__border"
+                    onkeypress="noDigits(event)" required>
+        </div>
+
+        <div class="form__item form__item_tel">
+            <span class="form__error form__error_hidden">Введите, пожалуйста, ваш номер телефона</span>
+            <input placeholder="Телефон" id="phone" name="phone" class="form__input form__input_tel  form__border"
+                    required>
+        </div>
+
+        <div class="form__item form__item_mail">
+            <span class="form__error form__error_hidden">Введите, пожалуйста, ваш e-mail</span>
+            <input  type="email" placeholder="E-mail" name="mail" class="form__input  form__border" required/>
+        </div>
+
+        <div class="form__item form__item_descr">
+            <span class="form__error form__error_hidden">Расскажите, пожалуйста, о себе</span>
+            <input  placeholder="Расскажите о себе" name="description"
+                    class="form__input form__input_descr  form__border" required>
+        </div>
+
+        <div class="form__item form__item_link">
+            <input placeholder="Добавьте ссылку на резюме" name="link"
+                    class="form__input  form__border">
+        </div>
+
+        <div class="form__item form__item_file">
+            <label class="form__label_file">
+                <span class="form__error form__error_hidden">Введите, пожалуйста, ваш номер телефона</span>
+                <div class="form__div">
+                    <div class="form__icon"></div>
+                    <span>И/или прикрепите файл</span>
+                </div>
+                <input name="file" class="form__input_file" type="file" value=''>
+                <button type="button" class='remove'></button>
+                <p class="filename" id="filename"></p>
+            </label>
+        </div>
+        <button type="submit" class="form__button">ОТПРАВИТЬ ЗАЯВКУ</button>
+    </form>
+    <p class="form__politic">Нажимая эту кнопку, вы соглашаетесь с&nbsp;<a href="https://nedvex.ru/privacy"
+                target=_blank class="form__link-politic">политикой&nbsp;конфиденциальности</a>
+    </p>
+</section>

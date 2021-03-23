@@ -38,8 +38,8 @@
         </noscript>
         <!-- End Google Tag Manager (noscript) -->
         <div class="page__content">
-            {{% import './blocks/header.njk' %}}
-            {{% import './blocks/intro.njk' %}}
+            {% include './blocks/header.njk' %}
+            {% include './blocks/intro.njk' %}
 
             <section class="main" id="main">
                 <form class="form-menu form-menu_large">
@@ -74,13 +74,23 @@
                         </label>
                     </div>
                 </form>
-                <ul class="cards"></ul>
+                <ul class="cards">
+                    {%- for vacancy in collections.vacancies-%}
+                        <div class="card">
+                            <div class="card__box">
+                                <span class="card__type">{{vacancy.data.category}}</span>
+                                <h2 class="card__title">{{vacancy.data.title}}</h2>
+                                <p class="card__descr">{{vacancy.data.description}}</p>
+                            </div>
+                            <a class="card__button"></a>
+                        </div>
+                    {%- endfor -%}
+                </ul>
                 <button class="main__button">Загрузить еще</button>
             </section>
 
-            
-            {{% import './blocks/presentation.njk' %}}
-            {{% import './blocks/footer.njk' %}}
+            {% include './blocks/presentation.njk' %}
+            {% include './blocks/footer.njk' %}
         </div>
         <div class="thanks-block">
             <div class="popup__container">
@@ -114,7 +124,7 @@
             </div>
         </div>
 
-        <template class="card-template">
+        {# <template class="card-template">
             <div class="card">
                 <div class="card__box">
                     <span class="card__type"></span>
@@ -123,7 +133,7 @@
                 </div>
                 <a class="card__button"></a>
             </div>
-        </template>
+        </template> #}
         <script>
             // Найти все ссылки начинающиеся на #
             const anchors = document.querySelectorAll('a[href^="#"]')

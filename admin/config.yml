@@ -9,10 +9,11 @@ collections:
     name: "vacancies" 
     folder: "content/vacancies"
     create: true
+    slug: "{{fields.title}}_{{fields.description}}"
     fields:
-    - { label: "Коллекция", name: "vacancies", widget: "hidden", default: "vacancies"}
+    - { label: "Коллекция", name: "tags", widget: "hidden", default: "vacancies"}
     - { label: "Шаблон", name: "layout", widget: "hidden", default: "vacancy.njk"}
-    - { label: "Категория", name: "name", widget: "text" }
+    - { label: "Категория", name: "category", widget: "text" }
     - { label: "Название вакансии", name: "title", widget: "text" }
     - { label: "Описание вакансии", name: "description", widget: "markdown" }
     - { label: "Город", name: "city", widget: "text" }
