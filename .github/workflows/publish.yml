@@ -1,10 +1,10 @@
-name: "🚀 release"
+name: "🚀 puslish"
 on:
   push:
     branches: [master]
 jobs:
-  release:
-    name: 🚀 release
+  puslish:
+    name: 🚀 puslish
     runs-on: ubuntu-latest
     steps:
       - name: 📚 checkout
@@ -14,10 +14,17 @@ jobs:
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org
+      - name: Check node version
+        run: node -v
+      - name: Check npm version
+        run: npm -v
       - name: Install Dependencies
         run: npm install
       - name: 🚀 publish
         run: npm run build
-        working-directory: my-package
+      - name: Just to see logs
+        run: |
+          npm install
+          npm run build
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
