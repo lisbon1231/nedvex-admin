@@ -5,7 +5,7 @@ backend:
 media_folder: "static/uploads"
 public_folder: "/uploads"
 collections:
-  - label: "Вакансии"
+  - label: "Вакансия"
     name: "vacancies" 
     folder: "content/vacancies"
     create: true
