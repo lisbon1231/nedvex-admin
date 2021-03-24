@@ -1,77 +1,94 @@
-const initilData = [
-    {
-        title: "Менеджер по продажам",
-        type: "Продажи",
-        descr: 'Мы обеспечиваем собственным офисом продаж и потоком клиентов на объект, вам предстоит проводить презентацию комплекса и доводить клиентов до сделки.',
-        cardButton: "Подробнее",
-        link: "https://nedvex.ru/manager"
+// const initilData = [
+//     {
+//         title: "Менеджер по продажам",
+//         type: "Продажи",
+//         descr: 'Мы обеспечиваем собственным офисом продаж и потоком клиентов на объект, вам предстоит проводить презентацию комплекса и доводить клиентов до сделки.',
+//         cardButton: "Подробнее",
+//         link: "https://nedvex.ru/manager"
 
-    },
-    {
-        title: "HR менеджер",
-        type: "Управление персоналом",
-        descr: " Ищем искателя. Вашей задачей будет поддерживать боевой дух нашей команды, а также искать новые таланты и публиковать вакансии на всевозможных площадках, например, прямо на этой странице :)",
-        cardButton: "Подробнее",
-        link: "https://nedvex.ru/job/hrmanager"
+//     },
+//     {
+//         title: "HR менеджер",
+//         type: "Управление персоналом",
+//         descr: " Ищем искателя. Вашей задачей будет поддерживать боевой дух нашей команды, а также искать новые таланты и публиковать вакансии на всевозможных площадках, например, прямо на этой странице :)",
+//         cardButton: "Подробнее",
+//         link: "https://nedvex.ru/job/hrmanager"
 
-    },
-    {
-        title: "SMM-менеджер",
-        type: "Маркетинг",
-        descr: "Человек, который будет представлять и продвигать нас в социальных сетях. Вас ждут как творческие, так и стратегические задачи, в которых не обойтись без креативного мышления и владения современными инструментами маркетинга.",
-        cardButton: "Подробнее",
-        link: "https://nedvex.ru/job/smmmanager"
-    },
-    {
-        title: "Руководитель строительного проекта",
-        type: "Девелопмент",
-        descr: "Вы возглавите проекты по реконструкции и строительству различных комплексов в Сочи, а также будете участвовать в разработке концепции, ведении отчетности и переговорах с представителями власти.",
-        cardButton: "Подробнее",
-        link: "https://nedvex.ru/job/headofdevelopment"
-    },
-    {
-        title: "Заместитель финансового директора",
-        type: "Финансы",
-        descr: "Тут не обойтись без диплома по экономике или финансам. Вам предстоит работа с бюджетированием, банками по привлечению финансировании, прохождение банковского мониторинга и др.",
-        cardButton: "Подробнее",
-        link: "https://nedvex.ru/job/deputycfo"
-    },
-    {
-        title: "Аналитик",
-        type: "Маркетинг",
-        descr: "Эксперт в CRM, магистр Excel, Google Analytics и других инструментов для сбора данных и ответа на вопросы вроде \"а где мы вообще находимся на рынке\" для формирования предложений по улучшению результатов деятельности компании.",
-        cardButton: "Подробнее",
-        link: "https://nedvex.ru/job/analyst"
-    },
-    {
-        title: "Специалист отдела кадров",
-        type: "Управление персоналом",
-        descr: "Вам предстоит сопровождать процессы трудоустройства, отпусков и других активностей сотрудников в компании, работать с документами и отчетами по кадрам.",
-        cardButton: "Подробнее",
-        link: "https://nedvex.ru/job/hrspecialist"
-    },
-    {
-        title: "Лид-менеджер",
-        type: "Продажи",
-        descr: "Мы обеспечим качественное обучение и поток клиентов, который вам предстоит обрабатывать, проводить презентации и доводить до сделки.",
-        cardButton: "Подробнее",
-        link: "https://nedvex.ru/job/leadmanager"
-    },
-    {
-        title: "Руководитель отдела снабжения",
-        type: "Снабжение",
-        descr: "Продукт, который мы от вас ожидаем, — это организация работы отдела так, чтобы наши объекты были укомплектованы в срок и по оптимальной цене всеми необходимыми ТМЦ.",
-        cardButton: "Подробнее",
-        link: "https://nedvex.ru/job/headofsupplydepartment/"
-    },   
-    {
-        title: "Специалист отдела снабжения",
-        type: "Снабжение",
-        descr: "Ищем крутого специалиста, который будет обеспечивать предприятие всеми требуемыми для его производственной деятельности материальными ресурсами и работать над эффективным использованием этих ресурсов.",
-        cardButton: "Подробнее",
-        link: "https://nedvex.ru/job/supplyspecialist/"
-    }    
-]
+//     },
+//     {
+//         title: "SMM-менеджер",
+//         type: "Маркетинг",
+//         descr: "Человек, который будет представлять и продвигать нас в социальных сетях. Вас ждут как творческие, так и стратегические задачи, в которых не обойтись без креативного мышления и владения современными инструментами маркетинга.",
+//         cardButton: "Подробнее",
+//         link: "https://nedvex.ru/job/smmmanager"
+//     },
+//     {
+//         title: "Руководитель строительного проекта",
+//         type: "Девелопмент",
+//         descr: "Вы возглавите проекты по реконструкции и строительству различных комплексов в Сочи, а также будете участвовать в разработке концепции, ведении отчетности и переговорах с представителями власти.",
+//         cardButton: "Подробнее",
+//         link: "https://nedvex.ru/job/headofdevelopment"
+//     },
+//     {
+//         title: "Заместитель финансового директора",
+//         type: "Финансы",
+//         descr: "Тут не обойтись без диплома по экономике или финансам. Вам предстоит работа с бюджетированием, банками по привлечению финансировании, прохождение банковского мониторинга и др.",
+//         cardButton: "Подробнее",
+//         link: "https://nedvex.ru/job/deputycfo"
+//     },
+//     {
+//         title: "Аналитик",
+//         type: "Маркетинг",
+//         descr: "Эксперт в CRM, магистр Excel, Google Analytics и других инструментов для сбора данных и ответа на вопросы вроде \"а где мы вообще находимся на рынке\" для формирования предложений по улучшению результатов деятельности компании.",
+//         cardButton: "Подробнее",
+//         link: "https://nedvex.ru/job/analyst"
+//     },
+//     {
+//         title: "Специалист отдела кадров",
+//         type: "Управление персоналом",
+//         descr: "Вам предстоит сопровождать процессы трудоустройства, отпусков и других активностей сотрудников в компании, работать с документами и отчетами по кадрам.",
+//         cardButton: "Подробнее",
+//         link: "https://nedvex.ru/job/hrspecialist"
+//     },
+//     {
+//         title: "Лид-менеджер",
+//         type: "Продажи",
+//         descr: "Мы обеспечим качественное обучение и поток клиентов, который вам предстоит обрабатывать, проводить презентации и доводить до сделки.",
+//         cardButton: "Подробнее",
+//         link: "https://nedvex.ru/job/leadmanager"
+//     },
+//     {
+//         title: "Руководитель отдела снабжения",
+//         type: "Снабжение",
+//         descr: "Продукт, который мы от вас ожидаем, — это организация работы отдела так, чтобы наши объекты были укомплектованы в срок и по оптимальной цене всеми необходимыми ТМЦ.",
+//         cardButton: "Подробнее",
+//         link: "https://nedvex.ru/job/headofsupplydepartment/"
+//     },   
+//     {
+//         title: "Специалист отдела снабжения",
+//         type: "Снабжение",
+//         descr: "Ищем крутого специалиста, который будет обеспечивать предприятие всеми требуемыми для его производственной деятельности материальными ресурсами и работать над эффективным использованием этих ресурсов.",
+//         cardButton: "Подробнее",
+//         link: "https://nedvex.ru/job/supplyspecialist/"
+//     }    
+// ]
+
+// заменить на норм
+const initilData = [...document.querySelectorAll('.card')].map((card) => {
+    const type = card.querySelector('.card__type').textContent
+    const title = card.querySelector('.card__title').textContent
+    const descr = card.querySelector('.card__descr').textContent
+    const cardButton = card.querySelector('.card__button')
+    const cardButtonText = card.querySelector('.card__button').textContent
+    const link = cardButton.href
+    return {
+        title,
+        type,
+        descr,
+        cardButton: cardButtonText,
+        link
+    }   
+})
 
 const isModile = window.innerWidth < 500;
 const AMOUT_PER_BLOCK = isModile ? 6 : 12;
@@ -92,20 +109,8 @@ const phoneBox = document.querySelector(".popup__box-hidden_oth");
 
 
 
-renderCardRange();
 
 loadMoreButton.addEventListener('click', renderCardRange)
-
-// burger.addEventListener('click', (e) => {
-//     submenu.classList.toggle('alert-menu__submenu_visible');
-//     burger.classList.toggle("alert-menu__button_hidden");
-// phone.classList.toggle("alert-menu__icon_hidden");
-// phoneOth.classList.toggle("alert-menu__phone_hidden");
-// phoneBox.classList.toggle("popup__box-hidden_flex");
-// })
-
-
-
 
 function renderCardRange() {
     dataToRender
@@ -117,18 +122,12 @@ function renderCardRange() {
             const descr = card.querySelector(".card__descr")
             const cardButton = card.querySelector(".card__button")
 
-
-
             title.textContent = cardData.title;
             type.textContent = cardData.type;
             descr.textContent = cardData.descr;
             cardButton.textContent = cardData.cardButton;
             cardButton.href = cardData.link
             list.append(card)
-
-            // if (cardData.title == 'Менеджер по продажам') {
-            // cardButton.setAttribute("target", "_blank");
-            //   }
         })
     if (dataToRender.length <= AMOUT_PER_BLOCK * (renderRounds) && dataToRender.length > AMOUT_PER_BLOCK * (renderRounds - 1)) {
         loadMoreButton.classList.add('main__button_hidden')

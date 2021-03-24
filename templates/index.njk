@@ -90,6 +90,17 @@
                 </div>
             </div>
         </div>
+        <template class="card-template">
+            <div class="card">
+                <div class="card__box">
+                    <span class="card__type">{{vacancy.data.category}}</span>
+                    <h2 class="card__title">{{vacancy.data.title}}</h2>
+                    <p class="card__descr">{{vacancy.data.description}}</p>
+                </div>
+                <a class="card__button" href="./{{vacancy.data.id}}">Подробнее</a>
+            </div>
+        </template>
+
         <script>
             // Найти все ссылки начинающиеся на #
             const anchors = document.querySelectorAll('a[href^="#"]')
