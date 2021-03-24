@@ -30,6 +30,14 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./_site/content/
           server-dir: public_html/
+      - name: 📂 Sync statics
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./_site/static/
+          server-dir: public_html/static/
             
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
