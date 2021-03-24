@@ -28,15 +28,8 @@ jobs:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          exclude: .git*
-            - .git*/**
-            -  **/.git*/**
-            - node_modules/**
-            - content/**/*
-            - static/**/*
-            - templates/**/*
-            - .github/**/*
-            - old_manualy_created_pages/**/*
+          local-dir: ./_site/content/
+          server-dir: public_html/vacancies/
             
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
