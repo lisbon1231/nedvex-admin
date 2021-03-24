@@ -13,11 +13,12 @@ collections:
     fields:
     - { label: "Коллекция", name: "tags", widget: "hidden", default: "vacancies"}
     - { label: "Шаблон", name: "layout", widget: "hidden", default: "vacancy.njk"}
-    - { label: "Категория", name: "category", widget: "text" }
-    - { label: "Название вакансии", name: "title", widget: "text" }
+    - { label: "Категория", name: "category", widget: "string" }
+    - { label: "Название вакансии", name: "title", widget: "string" }
     - { label: "Описание вакансии", name: "description", widget: "markdown" }
-    - { label: "Город", name: "city", widget: "text" }
-    - { label: "Зарплата", name: "salary", widget: "text", default: "Не указана" }
-    - { label: "Требования", name: "requirements", widget: "list" }
-    - { label: "Условия", name: "conditions", widget: "list" }
-    - { label: "Обязаности", name: "responsibilities", widget: "list" }
+    - { label: "Город", name: "city", widget: "string" }
+    - { label: "Зарплата", name: "salary", widget: "string", default: "Не указана" }
+    - { label: "Требования", name: "requirements", widget: "list", allow_add: true, field: {label: 'Требование', name: requirement, widget: "string" } }
+    - { label: "Условия", name: "conditions", widget: "list", allow_add: true, field: {label: 'Условие', name: requirement, widget: "string" } }
+    - { label: "Обязаности", name: "responsibilities", widget: "list", allow_add: true, field: {label: 'Обязанность', name: requirement, widget: "string" } }
+
