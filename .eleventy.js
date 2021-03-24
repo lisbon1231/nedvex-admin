@@ -1,8 +1,10 @@
 module.exports = function (eleventyConfig) {
+    eleventyConfig.addPassthroughCopy('static');
+
     return {
         dir: {
-            layouts: "templates",
-            markdown: "content"
+            layouts: 'templates',
+            markdown: 'content'
         },
 
         dataTemplateEngine: 'njk',
@@ -10,6 +12,6 @@ module.exports = function (eleventyConfig) {
         htmlTemplateEngine: 'njk',
         templateFormats: [
             'md', 'njk'
-        ],
+        ]
     };
 };

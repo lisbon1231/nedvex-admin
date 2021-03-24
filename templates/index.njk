@@ -27,8 +27,8 @@
         <meta property="og:image" content="img/logo.png">
         <meta name="format-detection" content="telephone=no">
         <title>Все вакансии — Nedvex</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="../../static/style.css">
+        <link rel="shortcut icon" href="../../static/img/favicon.png" type="image/x-icon">
     </head>
 
     <body class="page">
@@ -40,40 +40,8 @@
         <div class="page__content">
             {% include './blocks/header.njk' %}
             {% include './blocks/intro.njk' %}
-
             <section class="main" id="main">
-                <form class="form-menu form-menu_large">
-                    <div class="form-menu__inputs">
-                        <label class="form-menu__label form-menu__label_hov form-menu__label_checked">
-                            Все вакансии
-                            <input checked class="form-menu__input" name="type" type="radio" value="all">
-                        </label>
-                        <label class="form-menu__label form-menu__label_hov">
-                            Продажи
-                            <input class="form-menu__label_hov form-menu__input" name="type" type="radio" value="Продажи">
-                        </label>
-                        <label class="form-menu__label form-menu__label_hov">
-                            Финансы
-                            <input class="form-menu__label_hov form-menu__input" name="type" type="radio" value="Финансы">
-                        </label>
-                        <label class="form-menu__label form-menu__label_hov">
-                            Маркетинг
-                            <input class="form-menu__input" name="type" type="radio" value="Маркетинг">
-                        </label>
-                        <label class="form-menu__label form-menu__label_hov">
-                            <input class="form-menu__input" name="type" type="radio" value="Девелопмент">
-                            Девелопмент
-                        </label>
-                        <label class="form-menu__label form-menu__label_hov">
-                            <input class="form-menu__input" name="type" type="radio" value="Управление персоналом">
-                            Управление персоналом
-                        </label>
-                        <label class="form-menu__label form-menu__label_hov">
-                            <input class="form-menu__input" name="type" type="radio" value="Снабжение">
-                            Снабжение
-                        </label>
-                    </div>
-                </form>
+                {% include './blocks/formMenu.njk' %}
                 <ul class="cards">
                     {%- for vacancy in collections.vacancies-%}
                         <div class="card">
@@ -82,13 +50,12 @@
                                 <h2 class="card__title">{{vacancy.data.title}}</h2>
                                 <p class="card__descr">{{vacancy.data.description}}</p>
                             </div>
-                            <a class="card__button"></a>
+                            <a class="card__button">Подробнее</a>
                         </div>
                     {%- endfor -%}
                 </ul>
                 <button class="main__button">Загрузить еще</button>
             </section>
-
             {% include './blocks/presentation.njk' %}
             {% include './blocks/footer.njk' %}
         </div>
@@ -108,7 +75,7 @@
             <div class="popup__container popup__container_menu">
                 <div class="popup__nav">
                     <button class="popup__closedbutt-menu"></button>
-                    <img class="popup__logo" src="img/logodark.svg" alt="">
+                    <img class="popup__logo" src="../../static/img/logodark.svg" alt="">
                     <div class="popup__box-oth">
                         <div class="popup__icon"></div>
                         <a class="popup__phone" href="tel:+7 (968) 300-22-30">+7 (968) 300-22-30</a>
@@ -123,17 +90,6 @@
                 </div>
             </div>
         </div>
-
-        {# <template class="card-template">
-            <div class="card">
-                <div class="card__box">
-                    <span class="card__type"></span>
-                    <h2 class="card__title"></h2>
-                    <p class="card__descr"></p>
-                </div>
-                <a class="card__button"></a>
-            </div>
-        </template> #}
         <script>
             // Найти все ссылки начинающиеся на #
             const anchors = document.querySelectorAll('a[href^="#"]')
@@ -155,8 +111,8 @@
         </script>
 
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="js/jquery.maskedinput.min.js"></script>
-        <script src="js/wow.min.js"></script>
+        <script src="../../static/js/jquery.maskedinput.min.js"></script>
+        <script src="../../static/js/wow.min.js"></script>
         <script>
             function noDigits(event) {
                 if ("1234567890".indexOf(event.key) != -1) 
@@ -191,9 +147,9 @@
             });
         </script>
 
-        <script src="js/menu.js"></script>
-        <script src="js/common.js"></script>
-        <script src="js/commonoth.js"></script>
-        <script src="js/index.js"></script>
+        <script src="../../static/js/menu.js"></script>
+        <script src="../../static/js/common.js"></script>
+        <script src="../../static/js/commonoth.js"></script>
+        <script src="../../static/js/index.js"></script>
     </body>
 </html>
