@@ -38,7 +38,7 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./_site/static/
           server-dir: public_html/static/
-      - name: 📂 Sync statics
+      - name: 📂 Sync admin
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
           server: ${{ secrets.FTP_HOST }}
