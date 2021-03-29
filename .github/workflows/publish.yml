@@ -46,6 +46,14 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./admin/
           server-dir: public_html/admin/
+      - name: 📂 Sync php scripts
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./php/
+          server-dir: public_html/php/
             
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}

@@ -43,6 +43,8 @@
                 <p class="filename" id="filename"></p>
             </label>
         </div>
+        {# нужно для отправки subject = title на сервер #}
+        <input name="subject" style="display:none" value='{{title}}'/>
         <button type="submit" class="form__button">ОТПРАВИТЬ ЗАЯВКУ</button>
     </form>
     <p class="form__politic">Нажимая эту кнопку, вы соглашаетесь с&nbsp;<a href="https://nedvex.ru/privacy"

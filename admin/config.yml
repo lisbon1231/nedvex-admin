@@ -6,8 +6,8 @@ media_folder: "static/uploads"
 public_folder: "/uploads"
 collections:
   - label: "Вакансия"
-    name: "vacancies" 
-    folder: "content/vacancies"
+    name: "jobs" 
+    folder: "content/jobs"
     create: true
     slug: "{{fields.id}}"
     fields:
