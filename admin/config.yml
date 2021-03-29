@@ -14,7 +14,16 @@ collections:
     - { name: id, label: Id, widget: generateId }
     - { label: "Коллекция", name: "tags", widget: "hidden", default: "vacancies"}
     - { label: "Шаблон", name: "layout", widget: "hidden", default: "vacancy.njk"}
-    - { label: "Категория", name: "category", widget: "select", options: ["Продажи","Финансы", "Маркетинг", "Девелопмент", "Управление персоналом", "Снабжение"], multiple: false }
+    - { 
+      label: "Категория",
+      name: "category",
+      widget: "relation",
+      collection: "categories",
+      search_fields: ["title"],
+      value_field: "title",
+      display_fields: ["title"],
+      multiple: false
+    }
     - { label: "Название вакансии", name: "title", widget: "string" }
     - { label: "Описание вакансии", name: "description", widget: "markdown" }
     - { label: "Город", name: "city", widget: "string" }
@@ -22,5 +31,14 @@ collections:
     - { label: "Требования", name: "requirements", widget: "list", allow_add: true, field: {label: 'Требование', name: requirement, widget: "string" } }
     - { label: "Условия", name: "conditions", widget: "list", allow_add: true, field: {label: 'Условие', name: requirement, widget: "string" } }
     - { label: "Обязаности", name: "responsibilities", widget: "list", allow_add: true, field: {label: 'Обязанность', name: requirement, widget: "string" } }
+  - label: "Категории вакансий"
+    name: "categories" 
+    folder: "content/categories"
+    create: true
+    slug: "{{fields.id}}"
+    fields:
+    - { name: id, label: Id, widget: generateId }
+    - { label: "Коллекция", name: "tags", widget: "hidden", default: "categories"}
+    - { label: "Название категории", name: "title", widget: "string" }
     
 
