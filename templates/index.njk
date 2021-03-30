@@ -43,6 +43,14 @@
             <section class="main" id="main">
                 {% include './blocks/formMenu.njk' %}
                 <ul class="cards">
+                   <div class="card">
+       <div class="card__box">
+           <span class="card__type">Продажитест</span>
+           <h2 class="card__title">Менеджер по продажам</h2>
+           <p class="card__descr">блаблабла</p>
+       </div>
+       <a class="card__button" href="https://nedvex.ru/manager/">Подробнее</a>
+   </div>
                     {%- for vacancy in collections.vacancies-%}
                         <div class="card">
                             <div class="card__box">
@@ -54,7 +62,7 @@
                         </div>
                     {%- endfor -%}
                 </ul>
-                <button class="main__button">Загрузить еще</button>
+                {# <button class="main__button">Загрузить еще</button> #}
             </section>
             {% include './blocks/presentation.njk' %}
             {% include './blocks/footer.njk' %}

@@ -100,7 +100,7 @@ const initialDataLength = initilData.length;
 
 const list = document.querySelector('.cards')
 const cardTemplate = document.querySelector('.card-template').content.querySelector('.card');
-const loadMoreButton = document.querySelector('.main__button');
+// const loadMoreButton = document.querySelector('.main__button');
 const burger = document.querySelector('.alert-menu__button');
 const submenu = document.querySelector('.alert-menu__submenu');
 const phone = document.querySelector('.alert-menu__icon');
@@ -110,7 +110,7 @@ const phoneBox = document.querySelector(".popup__box-hidden_oth");
 
 
 
-loadMoreButton.addEventListener('click', renderCardRange)
+// loadMoreButton.addEventListener('click', renderCardRange)
 
 function renderCardRange() {
     dataToRender
@@ -129,9 +129,9 @@ function renderCardRange() {
             cardButton.href = cardData.link
             list.append(card)
         })
-    if (dataToRender.length <= AMOUT_PER_BLOCK * (renderRounds) && dataToRender.length > AMOUT_PER_BLOCK * (renderRounds - 1)) {
-        loadMoreButton.classList.add('main__button_hidden')
-    }
+    // if (dataToRender.length <= AMOUT_PER_BLOCK * (renderRounds) && dataToRender.length > AMOUT_PER_BLOCK * (renderRounds - 1)) {
+        // loadMoreButton.classList.add('main__button_hidden')
+    // }
 
 
 }
@@ -177,7 +177,7 @@ const form2 = document.querySelector('.form-menu_small');
 // })
 
 function showFilteredCards() {
-    loadMoreButton.classList.remove('main__button_hidden')
+    // loadMoreButton.classList.remove('main__button_hidden')
     renderRounds = 0;
     dataToRender = initilData.filter(cardData => {
         const cardPrice = cardData.price;
