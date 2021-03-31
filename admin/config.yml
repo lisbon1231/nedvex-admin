@@ -13,7 +13,7 @@ collections:
     fields:
     - { name: id, label: Id, widget: generateId }
     - { label: "Коллекция", name: "tags", widget: "hidden", default: "vacancies"}
-    - { label: "Шаблон", name: "layout", widget: "hidden", default: "vacancy.njk"}
+    - { label: "Шаблон", name: "layout", widget: "hidden", default: "job.njk"}
     - { 
       label: "Категория",
       name: "category",
