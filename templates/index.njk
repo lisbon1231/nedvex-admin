@@ -51,7 +51,9 @@
        </div>
        <a class="card__button" href="https://nedvex.ru/manager/">Подробнее</a>
    </div>
-                    {%- for vacancy in collections.vacancies-%}
+
+                    {% set vacancies = collections.vacancies|sortByPriority%}
+                    {%- for vacancy in vacancies-%}
                         <div class="card">
                             <div class="card__box">
                                 <span class="card__type">{{vacancy.data.category}}</span>

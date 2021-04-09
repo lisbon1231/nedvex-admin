@@ -10,6 +10,7 @@ collections:
     folder: "content/job"
     create: true
     slug: "{{fields.id}}"
+    sortable_fields: ['priority']
     fields:
     - { name: id, label: Id, widget: generateId }
     - { label: "Коллекция", name: "tags", widget: "hidden", default: "vacancies"}
@@ -24,6 +25,7 @@ collections:
       display_fields: ["title"],
       multiple: false
     }
+    - { label: "Приоритет", name: "priority", widget: "select", options: [{ label: "Приоритетная", value: "1" }, { label: "Не приоритетная", value: "2" }], multiple: false}
     - { label: "Название вакансии", name: "title", widget: "string" }
     - { label: "Описание вакансии", name: "description", widget: "markdown" }
     - { label: "Город", name: "city", widget: "string" }
@@ -40,5 +42,3 @@ collections:
     - { name: id, label: Id, widget: generateId }
     - { label: "Коллекция", name: "tags", widget: "hidden", default: "categories"}
     - { label: "Название категории", name: "title", widget: "string" }
-    
-
