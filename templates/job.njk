@@ -45,7 +45,7 @@
     <section class="main">
         <a class="main__link" href="https://nedvex.ru/job/#main">Назад ко всем вакансиям</a>
         <h1 class="main__header">{{title}}</h1>
-        {# <div>{{description}}</div> #}
+      <div class="main__wrapper">
         <div class="main__box">
             <div class="main__titles">
                 <h2 class="main__title">Город</h2>
@@ -55,6 +55,12 @@
                 <h2 class="main__subtitle">{{city}}</h2>
                 <h2 class="main__subtitle">{{salary}}</h2>
             </div>
+            </div>
+            <div class="main__descr-box">
+                <h2 class="main__title main__title_descr">Описание вакансии</h2>
+       <div class="main__descr">{{description}}</div>
+       </div>
+        </div>
         </div>
         <div class="main__container">
             <div class="main__demands">

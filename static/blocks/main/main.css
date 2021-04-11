@@ -6,7 +6,6 @@
     overflow: hidden;
 
 }
-
 .main__button {
     background: transparent;
     font-style: normal;
@@ -90,6 +89,10 @@ background: linear-gradient(
     margin-bottom: 0px;
 }
 
+
+.main__wrapper {
+display: flex;
+}
 
 
 
