@@ -339,15 +339,15 @@ textarea.form__input {
   }
 
 @media screen and (max-width: 1191px) {
-    .form {
+    /* .form {
       max-width: 940px;
-    }
+    } */
 }
 
 @media screen and (max-width: 992px) {
     .form  {
-      padding-left: 10px;
-      padding-right: 10px;
+      padding-left: 0px;
+      padding-right: 0px;
     }
     .form__item_mail {
         grid-column: col 1;
