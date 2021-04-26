@@ -37,8 +37,8 @@
             <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T6WJRD4" height="0" width="0" style="display:none;visibility:hidden"></iframe>
         </noscript>
         <!-- End Google Tag Manager (noscript) -->
-        <div class="page__content">
             {% include './blocks/header.njk' %}
+                    <div class="page__content">
             {% include './blocks/intro.njk' %}
             <section class="main" id="main">
                 {% include './blocks/formMenu.njk' %}
@@ -81,7 +81,8 @@
                 </a>
             </div>
         </div>
-        <div class="popup popup_menu">
+         <!-- 
+   <div class="popup popup_menu">
             <div class="popup__container popup__container_menu">
                 <div class="popup__nav">
                     <button class="popup__closedbutt-menu"></button>
@@ -99,7 +100,7 @@
                     <a class="popup__phone" href="tel:+7 (968) 300-22-30">+7 (968) 300-22-30</a>
                 </div>
             </div>
-        </div>
+        </div> -->
         <template class="card-template">
             <div class="card">
                 <div class="card__box">
@@ -131,46 +132,12 @@
             }
         </script>
 
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="../../static/js/jquery.maskedinput.min.js"></script>
-        <script src="../../static/js/wow.min.js"></script>
-        <script>
-            function noDigits(event) {
-                if ("1234567890".indexOf(event.key) != -1) 
-                    event.preventDefault();
-                }
-        </script>
 
-        <script>
-            jQuery(document).ready(function ($) {
-                $("#form").submit(function (event) {
-                    event.preventDefault();
-                    var str = $(this).serialize();
-                    var test = checkForm();
-                    if (test) {
-                        $.ajax({
-                            type: "POST",
-                            url: "send.php",
-                            data: str,
-                            success: function (msg) {
-                                if (msg == 'OK') {
-                                    console.log("send")
-                                    $('.thanks-block').fadeIn();
 
-                                } else {
-                                    console.log(msg)
-                                }
-                            }
-                        });
-                    }
-                    return false;
-                });
-            });
-        </script>
+
 
         <script src="../../static/js/menu.js"></script>
-        <script src="../../static/js/common.js"></script>
-        <script src="../../static/js/commonoth.js"></script>
-        <script src="../../static/js/index.js"></script>
+        <script src="../../static/js/header.js"></script>
+
     </body>
 </html>

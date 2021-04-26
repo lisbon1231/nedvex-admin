@@ -103,7 +103,7 @@ const cardTemplate = document.querySelector('.card-template').content.querySelec
 // const loadMoreButton = document.querySelector('.main__button');
 const burger = document.querySelector('.alert-menu__button');
 const submenu = document.querySelector('.alert-menu__submenu');
-const phone = document.querySelector('.alert-menu__icon');
+// const phone = document.querySelector('.alert-menu__icon');
 const phoneOth = document.querySelector(".alert-menu__phone");
 const phoneBox = document.querySelector(".popup__box-hidden_oth");
 

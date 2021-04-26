@@ -16,7 +16,7 @@ const popupMenu = document.querySelector(".popup_menu");
 // Кнопки открытия
 // const openDevelpPopupButton = document.querySelector(".header__presa");
 // const openDevelpMobilePopupButton = document.querySelector(".popup__presa");
-const burgerMenuButton = document.querySelector(".header__menu-burger");
+// const burgerMenuButton = document.querySelector(".header__menu-burger");
 const openRegistrationButton = document.querySelector(".main__card-butt-reg");
 // const openDevelpTouchPopupButton = document.querySelector(".main__details_look-touch");
 const openRegistrationTouchButton = document.querySelector(".main__card-butt-reg-touch");
@@ -46,10 +46,10 @@ const closedVesna = document.querySelector(".popup__link-menu_vesna");
 //     document.addEventListener("keyup", keyupHandler);
 // });
 
-burgerMenuButton.addEventListener("click", function() {
-    togglePopup(popupMenu);
-    document.addEventListener("keyup", keyupHandler);
-});
+// burgerMenuButton.addEventListener("click", function() {
+//     togglePopup(popupMenu);
+//     document.addEventListener("keyup", keyupHandler);
+// });
 
 
 
@@ -70,9 +70,9 @@ burgerMenuButton.addEventListener("click", function() {
 
 // });
 
-menuPopupClosedButton.addEventListener("click", function() {
-    togglePopup(popupMenu);
-});
+// menuPopupClosedButton.addEventListener("click", function() {
+//     togglePopup(popupMenu);
+// });
 
 // closedMone.addEventListener("click", function() {
 //     togglePopup(popupMenu);
@@ -94,9 +94,9 @@ menuPopupClosedButton.addEventListener("click", function() {
 //     handleOverlayClick(popupDevelopm, e);
 // });
 
-popupMenu.addEventListener("click", function(e) {
-    handleOverlayClick(popupMenu, e);
-});
+// popupMenu.addEventListener("click", function(e) {
+//     handleOverlayClick(popupMenu, e);
+// });
 
 
 // popupDevelopmMobile.addEventListener("click", function(e) {

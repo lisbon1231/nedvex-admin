@@ -5,47 +5,47 @@
   /* background: linear-gradient(
 123.14deg, #07080A -18.14%, #15171B 362.3%);  */
 background: linear-gradient(to bottom, #142040, #000a23);
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-
 }
 
-.page__subdiv {
-  background-image: url(../../img/back.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100vh;
-  margin-bottom: 150px;
-  position: relative;
-}
+
 
 .page__content {
-  max-width: 1160px;
+  /* max-width: 1160px; */
   margin: 0 auto;
   overflow: hidden;
-
+  padding-top: 20px;
+  /* height: 100vh; */
 }
 
 @media screen and (max-width: 1191px) {
-  .page__subdiv{
-    background-image: url(../../img/backtouch.png);
-    margin-bottom: 130px;
+  .page__content {
+    padding-left: 20px;
+    padding-right: 20px;
+    /* padding-top: 120px; */
+    padding-top: 185px;
   }
 }
 @media screen and (max-width: 992px) {
   .page__subdiv{
     background-image: url(../../img/backtouch.png);
     margin-bottom: 110px;
-
   }
+.page__content {
+  /* padding-left: 20px;
+  padding-right: 20px;
+    padding-top: 200px; */
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 200px;
+}
 }
 
 @media screen and (max-width: 678px) {
-  .page__subdiv{
-    background-image: url(../../img/backmobile.png);
-    margin-bottom: 90px;
-  }
+  .page__content {
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    padding-top: 85px;
+   }
 }
 @media screen and (max-width: 340px) {
   .page__subdiv{

@@ -67,7 +67,9 @@
 
 @media screen and (max-width: 1191px) {
     .presentation {
-        max-width: 940px;
+        /* max-width: 940px; */
+        padding-left: 20px;
+
     }
     /* .presentation__img {
     width: 520px;
@@ -77,7 +79,7 @@
 
 @media screen and (max-width: 992px) {
     .presentation {
-        padding-left: 10px;
+        padding-left: 20px;
         /* padding-right: 10px; */
         max-width: 100%;
         overflow: hidden;
