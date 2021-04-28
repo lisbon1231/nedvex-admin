@@ -157,6 +157,10 @@ justify-content: flex-end;
   letter-spacing: 0.01em;
   color: #ffffff;
 }
+.header__phone_dark {
+  color: #010B24;
+  display: block;
+}
 
 @media screen and (max-width: 1191px) {
   .header {
