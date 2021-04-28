@@ -80,23 +80,25 @@
 
 .intro__button {
     display: block;
-    background: #DFC7A8;
+    background: transparent;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 150%;
     text-align: center;
-    letter-spacing: 0.04em;
-    color: #000000;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
     border: none;
     box-sizing: border-box;
     outline: none;
     cursor: pointer;
-    width: 255px;
+    width: 300px;
     height: 60px;
     padding-top: 18px;
     padding-bottom: 18px;
     text-decoration: none;
+    font-size: 13px;
+line-height: 150%;
+border: 1px solid #DCDBD9;
+box-sizing: border-box;
 }
 
 .intro__button_oth {
@@ -108,11 +110,11 @@
 }
 
 .intro__button:hover, .presentation__button:active, .presentation__button:focus {
-    background-color: transparent;
-    border: 1px solid #C4C4C4;
+    background-color: #F5E6D1;
+    border: 1px solid #F5E6D1;
     box-sizing: border-box;
     text-decoration: none;
-    color: white;
+    color: #010B24;
 }
 
 .intro__description-box {

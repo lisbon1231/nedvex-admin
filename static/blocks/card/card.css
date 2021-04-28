@@ -64,7 +64,7 @@
     color: #FFFFFF;
     margin: 0;
     display: block;
-    max-width: 647px;
+    max-width: 593px;
 
 
 }
@@ -73,18 +73,18 @@
 .card__button {
     background: transparent;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 13px;
     line-height: 150%;
     letter-spacing: 0.03em;
     color: #ffffff;
-    border: 1px solid #ffffff;
+    border: 1px solid #DCDBD9;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     outline: none;
     cursor: pointer;
     text-decoration: none;
     display: block;
-    width: 255px;
+    width: 300px;
     height: 60px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -101,11 +101,17 @@
 
 .card__button:hover, .card__button:active, .card__button:focus {
   
-    color: #000000;
+    /* color: #000000;
     text-decoration: none;
     background: -webkit-gradient(linear, left bottom, left top, from(#F5E6D1), to(#F5E6D1)), #FFFFFF;
     background: -o-linear-gradient(bottom, #F5E6D1, #F5E6D1), #FFFFFF;
-    background: linear-gradient(0deg, #F5E6D1, #F5E6D1), #FFFFFF;
+    background: linear-gradient(0deg, #F5E6D1, #F5E6D1), #FFFFFF; */
+
+        background-color: #F5E6D1;
+    border: 1px solid #F5E6D1;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #010B24;
 }
 
 .card__button_hidden {

@@ -162,7 +162,7 @@ position: absolute;
 .form__input {
     -webkit-appearance: none;
     min-height: 60px;
-    padding-left: 20px;
+    padding-left: 30px;
     width: 300px;
     font-style: normal;
     font-weight: normal;
@@ -170,7 +170,7 @@ position: absolute;
     line-height: 150%;
     text-align: left;
     letter-spacing: 0.03em;
-    border: 1px solid #b0b0b0;
+    border: 1px solid #5A6379;
     color: #FFFFFF;
     -webkit-transition: all 0.5s ease 0s;
     -o-transition: all 0.5s ease 0s;
@@ -186,8 +186,9 @@ position: absolute;
 
 .form__input::placeholder {
     color: #FFFFFF;
-    opacity: 0.7;
+    opacity: 0.5;
     text-align: left;
+    letter-spacing: 0.03em;
 }
 
 .form__input_descr::placeholder {
@@ -235,7 +236,7 @@ textarea.form__input {
     height: 60px;
     background-color:  #FFFFFF; 
  padding: 0;
-    color:  #333657;
+    color:  #010B24;
   font-style: normal;
     font-weight: normal;
     font-size: 13px;
@@ -254,7 +255,7 @@ textarea.form__input {
 }
 
 .form__button:hover {
-    background-color: #dfc7a8;
+    background-color: #F5E6D1;
 }
 
 .form__par {
