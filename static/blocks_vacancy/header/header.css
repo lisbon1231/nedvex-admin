@@ -222,6 +222,10 @@ justify-content: flex-end;
     padding-left: 20px;
     padding-right: 20px;
   }
+  .header__phone_dark:hover {
+    color: #010B24;
+  text-decoration: underline;
+  }
 }
 
 @media screen and (max-width: 678px) {
@@ -317,4 +321,13 @@ justify-content: flex-end;
   .header__hidden-wrapper {
     flex-direction: column;
   }
+  .header__phone_dark:hover {
+    color: #010B24;
+  text-decoration: underline;
+  }
+}
+
+.header__phone_dark:hover {
+  color: #010B24;
+text-decoration: underline;
 }

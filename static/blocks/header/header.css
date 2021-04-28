@@ -321,4 +321,14 @@ justify-content: flex-end;
   .header__hidden-wrapper {
     flex-direction: column;
   }
+
+  .header__phone_dark:hover {
+    color: #010B24;
+  text-decoration: underline;
+  }
+}
+
+.header__phone_dark:hover {
+  color: #010B24;
+text-decoration: underline;
 }
