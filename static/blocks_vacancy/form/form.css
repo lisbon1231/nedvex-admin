@@ -166,7 +166,7 @@ position: absolute;
     width: 300px;
     font-style: normal;
     font-weight: normal;
-    font-size: 13px;
+    font-size: 16px;
     line-height: 150%;
     text-align: left;
     letter-spacing: 0.03em;
@@ -198,7 +198,7 @@ margin-top: 0;}
     margin: 0;
     margin-bottom: 50px;
     text-align: left;
-    font-size: 13px;
+    font-size: 11px;
     line-height: 145%;
     color: #FFFFFF;
     opacity: 0.7;
@@ -288,7 +288,7 @@ textarea.form__input {
     width: 100%; */
 
     display: -ms-grid; display: grid;
-        grid-gap: 20px;
+    grid-gap: 20px 25px;
     grid-template-columns: [col] 300px [col] 300px [col] 300px  ;
     grid-template-rows: [row] auto [row] auto [row] ;
 }
@@ -339,11 +339,11 @@ textarea.form__input {
     grid-row: row 3;
   }
 
-@media screen and (max-width: 1191px) {
+/* @media screen and (max-width: 1191px) { */
     /* .form {
       max-width: 940px;
     } */
-}
+/* } */
 
 @media screen and (max-width: 992px) {
     .form  {
@@ -430,7 +430,7 @@ textarea.form__input {
     } */
 }
 
-@media screen and (max-width: 644px) {
+@media screen and (max-width: 767px) {
 
     .form__item_mail {
         grid-column: col 1;
