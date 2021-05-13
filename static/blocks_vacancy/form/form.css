@@ -482,6 +482,8 @@ textarea.form__input {
 
     .form__body {
         grid-template-columns: [col] 100% [col] 100%  [col] 100% ;
+        width: 300px;
+        margin: 0 auto; 
    
     }
 
@@ -501,6 +503,10 @@ textarea.form__input {
         height: 180px;
 
 
+    }
+
+    .form__header {
+    font-size: 35px;
     }
 
 
