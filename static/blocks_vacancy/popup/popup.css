@@ -243,6 +243,8 @@ display: -webkit-box;
   text-transform: uppercase;
   color: #010b24;
   padding: 15px 41px;
+  width: 300px;
+  height: 60px;
 }
 
 .popup__butt:hover {
