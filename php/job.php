@@ -48,7 +48,7 @@ if($post) {
       'to'      => array(
         array(
           'name'  => 'Content manager',
-          'email' => 'chkadua.sofiya@gmail.com'
+          'email' => 'hr@nedvex.ru'
         )
       )
     );
