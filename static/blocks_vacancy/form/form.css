@@ -311,6 +311,8 @@ textarea.form__input {
       flex-wrap: wrap;
       padding-right: 20px;
       resize:none;
+      font-family: "Graphik LCG", Arial, sans-serif;
+font-style: normal;
 
   }
   .form__item_descr {
