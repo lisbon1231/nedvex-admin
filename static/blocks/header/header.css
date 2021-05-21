@@ -249,7 +249,8 @@ justify-content: flex-end;
   }
   .header__logo {
     width: 90px;
-    height: 35px;
+    /* height: 35px; */
+    height: 29px;
   }
   .header {
     padding-left: 10px;

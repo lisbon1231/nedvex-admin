@@ -255,6 +255,8 @@ label.form-menu__label_hov:focus, label.form-menu__label:active, label.form-menu
 
     .form-menu {
         /* margin-top: 40px; */
+        padding-bottom: 40px;
+
     }
 }
 
