@@ -9,8 +9,9 @@
   /* background: linear-gradient(to bottom, #142040, #000a23); */
   /* background: linear-gradient(123.14deg, #1C294D 7.86%, #000A23 66.3%); */
   /* background: linear-gradient(#142040, #000a23e0); */
-  background: linear-gradient( 123.14deg, #1c294d 7.86%, #000a23 66.3%);
-  box-shadow: 1px 1px 3px #000b24;
+  background: linear-gradient( 123.14deg, #07080a 7.86%, #15171b 66.3%);
+  box-shadow: 1px 1px 3px #07080a;
+  /* background: linear-gradient(to right, #07080a -18.14%, #15171b 362.3%); */
 }
 
 .header__hidden-wrapper {
@@ -42,11 +43,16 @@
 }
 
 .header__logo {
-  width: 132px;
+  /* width: 132px;
   height: 48px;
   background-image: url(../../img/logo2.svg);
   background-size: contain;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
+  width: 104px;
+    height: 31px;
+    background-image: url(../../img/logomain.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .header__menu-burger {

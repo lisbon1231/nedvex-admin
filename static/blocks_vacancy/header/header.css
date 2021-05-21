@@ -42,12 +42,18 @@
 }
 
 .header__logo {
-  width: 132px;
+  /* width: 132px;
   height: 48px;
   background-image: url(../../img/logo2.svg);
   background-size: contain;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
+    width: 104px;
+    height: 31px;
+    background-image: url(../../img/logomain.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
+
 
 .header__menu-burger {
   background-image: url(../../img/menu.svg);

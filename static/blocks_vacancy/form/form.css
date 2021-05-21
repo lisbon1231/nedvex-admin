@@ -235,7 +235,7 @@ textarea.form__input {
     height: 60px;
     background-color:  #FFFFFF; 
  padding: 0;
-    color:  #010B24;
+    color:  #322E2D;
   font-style: normal;
     font-weight: normal;
     font-size: 13px;
@@ -254,7 +254,7 @@ textarea.form__input {
 }
 
 .form__button:hover {
-    background-color: #F5E6D1;
+    background-color: #B6ABA7;
 }
 
 .form__par {
@@ -316,7 +316,7 @@ textarea.form__input {
     grid-column: col 1 / span 3;
     width: 100%;
     display: -webkit-box;
-    display: -ms-flexbox;
+    /* display: -ms-flexbox; */
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -369,7 +369,7 @@ textarea.form__input {
         width: 300px;
         height: 220px;
         display: -webkit-box;
-        display: -ms-flexbox;
+        /* display: -ms-flexbox; */
         display: flex;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
@@ -380,7 +380,7 @@ textarea.form__input {
         grid-column: col 1 / span 3;
         width: 300px;
         display: -webkit-box;
-        display: -ms-flexbox;
+        /* display: -ms-flexbox; */
         display: flex;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
@@ -392,7 +392,7 @@ textarea.form__input {
         height: 220px;
         grid-column: col 2;
         -ms-grid-row: 2;
-        -ms-grid-row-span: 3;
+        /* -ms-grid-row-span: 3; */
         grid-row: 2 / 5;
 
     }
@@ -433,7 +433,7 @@ textarea.form__input {
 
     .form__item_mail {
         grid-column: col 1;
-        grid-row: row 2;
+        grid-row: row 3;
     }
 
     .form__item_name {
@@ -445,14 +445,14 @@ textarea.form__input {
 
     .form__item_tel {
         grid-column: col 1;
-        grid-row: row 3;
+        grid-row: row 2;
         width: 100%; 
 
     }
 
     .form__item_file {
         grid-column: col 1;
-        grid-row: 5;
+        grid-row: 6;
         width: 100%; 
 
     }
@@ -491,7 +491,7 @@ textarea.form__input {
     }
     .form__item_link {
         grid-column: col 1;
-        grid-row: row 6;  
+        grid-row: row 5;  
         width: 100%; 
     }
 

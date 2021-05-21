@@ -12,7 +12,7 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
             align-items: center;
-    margin-top: 80px;
+    /* margin-top: 80px; */
 }
 
 .form-menu__label {
@@ -221,7 +221,8 @@ label.form-menu__label_hov:focus, label.form-menu__label:active, label.form-menu
     }
 
     .form-menu {
-        margin-top: 60px;
+        /* margin-top: 60px; */
+        margin-top: 0;
     }
     .form-menu__inputs_oth {
         -webkit-box-orient: vertical;        -webkit-box-direction: normal;        -ms-flex-direction: column;        flex-direction: column;    }
@@ -253,7 +254,7 @@ label.form-menu__label_hov:focus, label.form-menu__label:active, label.form-menu
     }
 
     .form-menu {
-        margin-top: 40px;
+        /* margin-top: 40px; */
     }
 }
 

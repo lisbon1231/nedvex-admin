@@ -107,11 +107,11 @@
     background: -o-linear-gradient(bottom, #F5E6D1, #F5E6D1), #FFFFFF;
     background: linear-gradient(0deg, #F5E6D1, #F5E6D1), #FFFFFF; */
 
-        background-color: #F5E6D1;
-    border: 1px solid #F5E6D1;
+        background-color: #B6ABA7;
+    border: 1px solid #B6ABA7;
     box-sizing: border-box;
     text-decoration: none;
-    color: #010B24;
+    color: white;
 }
 
 .card__button_hidden {
@@ -155,6 +155,7 @@
         color: white;
         text-decoration: none;
         background: transparent;
+        border: none;
     }
     
 

@@ -4,7 +4,9 @@
   margin: 0 auto;
   /* background: linear-gradient(
 123.14deg, #07080A -18.14%, #15171B 362.3%);  */
-background: linear-gradient(to bottom, #142040, #000a23);
+/* background: linear-gradient(to bottom, #142040, #000a23); */
+background: linear-gradient(to right, #07080a -18.14%, #15171b 362.3%);
+
 }
 
 
@@ -13,7 +15,7 @@ background: linear-gradient(to bottom, #142040, #000a23);
   /* max-width: 1160px; */
   margin: 0 auto;
   overflow: hidden;
-  padding-top: 20px;
+  padding-top: 65px;
   /* height: 100vh; */
 }
 
