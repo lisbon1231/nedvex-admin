@@ -164,7 +164,7 @@ justify-content: flex-end;
   color: #ffffff;
 }
 .header__phone_dark {
-  color: #010B24;
+  color:  #322E2D;
   display: block;
 }
 
@@ -266,7 +266,7 @@ justify-content: flex-end;
     justify-content: flex-end;
   }
   .header__link {
-    color: #010B24;
+    color:  #322E2D;
   }
   .header__icon {
     margin-right: 0;
@@ -275,7 +275,7 @@ justify-content: flex-end;
     display: none;
   }
   .header__link:hover {
-    color: #010B24;
+    color:  #322E2D;
     text-decoration: underline;
   }
   .header__logo_dark {
@@ -297,10 +297,10 @@ justify-content: flex-end;
     z-index: 5;
     overflow-x: hidden;
     overflow-y: auto;
-    color: #010B24;
+    color:  #322E2D;
   }
   .header__phone_dark {
-    color: #010B24;
+    color:  #322E2D;
     display: block;
   }
   .header__icon_dark {
@@ -329,12 +329,12 @@ justify-content: flex-end;
   }
 
   .header__phone_dark:hover {
-    color: #010B24;
+    color:  #322E2D;
   text-decoration: underline;
   }
 }
 
 .header__phone_dark:hover {
-  color: #010B24;
+  color:  #322E2D;
 text-decoration: underline;
 }
