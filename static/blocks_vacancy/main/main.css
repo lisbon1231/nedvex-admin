@@ -62,7 +62,7 @@
     font-size: 15px;
     line-height: 150%;
     letter-spacing: 0.01em;
-    margin-bottom: 80px;
+    margin-bottom: 150px;
     padding: 0;
     margin-left: 20px;
 }
@@ -351,7 +351,7 @@
 
 
     .main__description {
-        margin-bottom: 35px;
+        margin-bottom: 135px;
     }
 
     .main__title {
@@ -389,6 +389,10 @@
         width: 90%;
     }
 
+    .main__description {
+        margin-bottom: 35px;
+    }
+
     .main__wrapper {
         flex-direction: column;
         margin-bottom: 35px;
@@ -396,6 +400,7 @@
     .main__box {
         width: 90%;  
         margin-bottom: 35px;
+        margin-top: 40px;
     }
 
     .main__descr-box {
@@ -447,6 +452,7 @@
 
     .main__box {
         width: 100%;
+        margin-top: 0;
     }
 
 }
